@@ -1,23 +1,29 @@
 html {
-	box-sizing: border-box;
+  box-sizing: border-box;
 }
 *,
 *::after,
 *::before {
-	box-sizing: inherit;
+  box-sizing: inherit;
 }
-body {}
+body {
+  font-family: 'Gotham Pro';
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 2;
+  letter-spacing: 1.05px;
+  color: $text-color;
+  background-color: $white;
+}
 a {
-	display: inline-block;
-	text-decoration: none;
-}
-ul,
-li {
-	list-style: none;
-	margin: 0;
-	padding: 0;
+  display: inline-block;
+  text-decoration: none;
 }
 .container {
-	max-width: 1200px;
-	margin: 0 auto;
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+.container-fluid {
+  width: 100%;
 }

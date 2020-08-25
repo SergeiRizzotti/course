@@ -56,7 +56,10 @@ gulp.task('scss', function () {
 
 gulp.task('css', function () {
   return gulp
-    .src(['node_modules/normalize.css/normalize.css'])
+    .src([
+      'node_modules/normalize.css/normalize.css',
+      'node_modules/slick-carousel/slick/slick.css',
+    ])
     .pipe(concat('_libs.scss'))
     .pipe(gulp.dest('app/scss'))
     .pipe(
@@ -84,7 +87,10 @@ gulp.task('script', function () {
 
 gulp.task('js', function () {
   return gulp
-    .src(['node_modules/jquery/dist/jquery.js'])
+    .src([
+      'node_modules/jquery/dist/jquery.js',
+      'node_modules/slick-carousel/slick/slick.js',
+    ])
     .pipe(concat('libs.min.js'))
     .pipe(uglify())
     .pipe(gulp.dest('app/js'))
