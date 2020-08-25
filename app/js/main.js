@@ -70,8 +70,8 @@ $(function () {
     slidesToScroll: 1,
     dots: true,
     prevArrow:
-      '<img class="slider-arrows slider-arrows__left" src="../img/speakers/arrows-left.png" alt="arrows-left">',
+      '<img class="slider-arrows slider-arrows__left" src="./img/speakers/arrows-left.png" alt="arrows-left">',
     nextArrow:
-      '<img class="slider-arrows slider-arrows__right" src="../img/speakers/arrows-right.png" alt="arrows-right">',
+      '<img class="slider-arrows slider-arrows__right" src="./img/speakers/arrows-right.png" alt="arrows-right">',
   });
 });
